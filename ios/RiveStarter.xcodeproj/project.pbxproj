@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		79617F7C117F994FB2FD5D5E /* libPods-RiveStarter-RiveStarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DE1015A242807E34069CB5 /* libPods-RiveStarter-RiveStarterTests.a */; };
+		18CAA4FE85ED0869CDF1B40E /* libPods-RiveStarter-RiveStarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6EA76309A0D0D4022BCB49 /* libPods-RiveStarter-RiveStarterTests.a */; };
+		55B29DE4466242417AF5ECAF /* libPods-RiveStarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E03901358FDA8C3039A4FEEC /* libPods-RiveStarter.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A1BD293B2C696E8D650200FD /* libPods-RiveStarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1687399FA805FDBFE7E87625 /* libPods-RiveStarter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +30,19 @@
 		00E356EE1AD99517003FC87E /* RiveStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiveStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RiveStarterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiveStarterTests.m; sourceTree = "<group>"; };
-		0C3308BFB07FC49BAB56D19B /* Pods-RiveStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter.debug.xcconfig"; path = "Target Support Files/Pods-RiveStarter/Pods-RiveStarter.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RiveStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiveStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RiveStarter/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RiveStarter/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RiveStarter/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiveStarter/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RiveStarter/main.m; sourceTree = "<group>"; };
-		1687399FA805FDBFE7E87625 /* libPods-RiveStarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RiveStarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40153E5E750C3535CCDDC824 /* Pods-RiveStarter-RiveStarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter-RiveStarterTests.release.xcconfig"; path = "Target Support Files/Pods-RiveStarter-RiveStarterTests/Pods-RiveStarter-RiveStarterTests.release.xcconfig"; sourceTree = "<group>"; };
-		4B602D5A9C66ACA045474A0A /* Pods-RiveStarter-RiveStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter-RiveStarterTests.debug.xcconfig"; path = "Target Support Files/Pods-RiveStarter-RiveStarterTests/Pods-RiveStarter-RiveStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7453F94140650F63D6DD01AA /* Pods-RiveStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter.release.xcconfig"; path = "Target Support Files/Pods-RiveStarter/Pods-RiveStarter.release.xcconfig"; sourceTree = "<group>"; };
+		2E1D850E24CB0CE7D8B23E02 /* Pods-RiveStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter.release.xcconfig"; path = "Target Support Files/Pods-RiveStarter/Pods-RiveStarter.release.xcconfig"; sourceTree = "<group>"; };
+		3FC9DE7B406FAED767B9B23D /* Pods-RiveStarter-RiveStarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter-RiveStarterTests.release.xcconfig"; path = "Target Support Files/Pods-RiveStarter-RiveStarterTests/Pods-RiveStarter-RiveStarterTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D6EA76309A0D0D4022BCB49 /* libPods-RiveStarter-RiveStarterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RiveStarter-RiveStarterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RiveStarter/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C3DE1015A242807E34069CB5 /* libPods-RiveStarter-RiveStarterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RiveStarter-RiveStarterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84D785EBD861E07B0068602 /* Pods-RiveStarter-RiveStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter-RiveStarterTests.debug.xcconfig"; path = "Target Support Files/Pods-RiveStarter-RiveStarterTests/Pods-RiveStarter-RiveStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E03901358FDA8C3039A4FEEC /* libPods-RiveStarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RiveStarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E268848BA4B5B5D4428739EC /* Pods-RiveStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiveStarter.debug.xcconfig"; path = "Target Support Files/Pods-RiveStarter/Pods-RiveStarter.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79617F7C117F994FB2FD5D5E /* libPods-RiveStarter-RiveStarterTests.a in Frameworks */,
+				18CAA4FE85ED0869CDF1B40E /* libPods-RiveStarter-RiveStarterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BD293B2C696E8D650200FD /* libPods-RiveStarter.a in Frameworks */,
+				55B29DE4466242417AF5ECAF /* libPods-RiveStarter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,19 +100,19 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				1687399FA805FDBFE7E87625 /* libPods-RiveStarter.a */,
-				C3DE1015A242807E34069CB5 /* libPods-RiveStarter-RiveStarterTests.a */,
+				E03901358FDA8C3039A4FEEC /* libPods-RiveStarter.a */,
+				4D6EA76309A0D0D4022BCB49 /* libPods-RiveStarter-RiveStarterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		79F3003ED752177DBF2F3CAF /* Pods */ = {
+		777F02FDD58A7A565D16207D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C3308BFB07FC49BAB56D19B /* Pods-RiveStarter.debug.xcconfig */,
-				7453F94140650F63D6DD01AA /* Pods-RiveStarter.release.xcconfig */,
-				4B602D5A9C66ACA045474A0A /* Pods-RiveStarter-RiveStarterTests.debug.xcconfig */,
-				40153E5E750C3535CCDDC824 /* Pods-RiveStarter-RiveStarterTests.release.xcconfig */,
+				E268848BA4B5B5D4428739EC /* Pods-RiveStarter.debug.xcconfig */,
+				2E1D850E24CB0CE7D8B23E02 /* Pods-RiveStarter.release.xcconfig */,
+				B84D785EBD861E07B0068602 /* Pods-RiveStarter-RiveStarterTests.debug.xcconfig */,
+				3FC9DE7B406FAED767B9B23D /* Pods-RiveStarter-RiveStarterTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -133,7 +133,7 @@
 				00E356EF1AD99517003FC87E /* RiveStarterTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				79F3003ED752177DBF2F3CAF /* Pods */,
+				777F02FDD58A7A565D16207D /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RiveStarterTests" */;
 			buildPhases = (
-				9986DA775C5FBF710041378B /* [CP] Check Pods Manifest.lock */,
+				1770B4DBAC140ACB844AEB1F /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				9EBAED63EB2B47E104F38AF0 /* [CP] Embed Pods Frameworks */,
-				E9D00DAB2339029C2153DE56 /* [CP] Copy Pods Resources */,
+				20FE734C643296E34221C6BF /* [CP] Embed Pods Frameworks */,
+				81B345F6C5894B15CC784F70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RiveStarter" */;
 			buildPhases = (
-				2B1840D038314571089A909B /* [CP] Check Pods Manifest.lock */,
+				84A3971F91ABDB1472384F78 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				30CA011C3AB7ADEA4A0AE914 /* [CP] Embed Pods Frameworks */,
-				216DA8C039779700A635D2C1 /* [CP] Copy Pods Resources */,
+				BF52091A620B96298995FAB2 /* [CP] Embed Pods Frameworks */,
+				122755DF502F2DB4F59C6B78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,7 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		216DA8C039779700A635D2C1 /* [CP] Copy Pods Resources */ = {
+		122755DF502F2DB4F59C6B78 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,46 +282,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiveStarter/Pods-RiveStarter-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2B1840D038314571089A909B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RiveStarter-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30CA011C3AB7ADEA4A0AE914 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RiveStarter/Pods-RiveStarter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RiveStarter/Pods-RiveStarter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiveStarter/Pods-RiveStarter-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9986DA775C5FBF710041378B /* [CP] Check Pods Manifest.lock */ = {
+		1770B4DBAC140ACB844AEB1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,7 +304,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9EBAED63EB2B47E104F38AF0 /* [CP] Embed Pods Frameworks */ = {
+		20FE734C643296E34221C6BF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,7 +321,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiveStarter-RiveStarterTests/Pods-RiveStarter-RiveStarterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E9D00DAB2339029C2153DE56 /* [CP] Copy Pods Resources */ = {
+		81B345F6C5894B15CC784F70 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +336,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiveStarter-RiveStarterTests/Pods-RiveStarter-RiveStarterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84A3971F91ABDB1472384F78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RiveStarter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF52091A620B96298995FAB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RiveStarter/Pods-RiveStarter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RiveStarter/Pods-RiveStarter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RiveStarter/Pods-RiveStarter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -429,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B602D5A9C66ACA045474A0A /* Pods-RiveStarter-RiveStarterTests.debug.xcconfig */;
+			baseConfigurationReference = B84D785EBD861E07B0068602 /* Pods-RiveStarter-RiveStarterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40153E5E750C3535CCDDC824 /* Pods-RiveStarter-RiveStarterTests.release.xcconfig */;
+			baseConfigurationReference = 3FC9DE7B406FAED767B9B23D /* Pods-RiveStarter-RiveStarterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C3308BFB07FC49BAB56D19B /* Pods-RiveStarter.debug.xcconfig */;
+			baseConfigurationReference = E268848BA4B5B5D4428739EC /* Pods-RiveStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7453F94140650F63D6DD01AA /* Pods-RiveStarter.release.xcconfig */;
+			baseConfigurationReference = 2E1D850E24CB0CE7D8B23E02 /* Pods-RiveStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
