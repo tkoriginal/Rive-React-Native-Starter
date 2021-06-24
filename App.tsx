@@ -1,115 +1,135 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  TextInput,
+  ScrollView,
+  TouchableOpacity,
+  Text,
+} from 'react-native';
+import Rive, { Alignment, RiveRef } from 'rive-react-native';
 
- import React from 'react';
- import {
-   SafeAreaView,
-   ScrollView,
-   StatusBar,
-   StyleSheet,
-   Text,
-   useColorScheme,
-   View,
- } from 'react-native';
+interface Users {
+  id: string;
+  createdAt: Date;
+  name: string;
+  avatar: string;
+  password: string;
+  username: string;
+}
 
- import {
-   Colors,
-   DebugInstructions,
-   Header,
-   LearnMoreLinks,
-   ReloadInstructions,
- } from 'react-native/Libraries/NewAppScreen';
+const resourceName = 'teddy_login';
+const App = () => {
+  const riveRef = React.useRef<RiveRef>(null);
+  const [username, setUsername] = React.useState<string>('');
+  const [password, setPassword] = React.useState<string>('');
 
- const Section: React.FC<{
-   title: string;
- }> = ({children, title}) => {
-   const isDarkMode = useColorScheme() === 'dark';
-   return (
-     <View style={styles.sectionContainer}>
-       <Text
-         style={[
-           styles.sectionTitle,
-           {
-             color: isDarkMode ? Colors.white : Colors.black,
-           },
-         ]}>
-         {title}
-       </Text>
-       <Text
-         style={[
-           styles.sectionDescription,
-           {
-             color: isDarkMode ? Colors.light : Colors.dark,
-           },
-         ]}>
-         {children}
-       </Text>
-     </View>
-   );
- };
+  const handsUp = () =>
+    riveRef.current?.setInputState('State Machine 1', 'hands_up', true);
 
- const App = () => {
-   const isDarkMode = useColorScheme() === 'dark';
+  const handsDown = () =>
+    riveRef.current?.setInputState('State Machine 1', 'hands_up', false);
 
-   const backgroundStyle = {
-     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-   };
+  const wrongPassword = () =>
+    riveRef.current?.fireState('State Machine 1', 'fail');
+  const success = () =>
+    riveRef.current?.fireState('State Machine 1', 'success');
 
-   return (
-     <SafeAreaView style={backgroundStyle}>
-       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <ScrollView
-         contentInsetAdjustmentBehavior="automatic"
-         style={backgroundStyle}>
-         <Header />
-         <View
-           style={{
-             backgroundColor: isDarkMode ? Colors.black : Colors.white,
-           }}>
-           <Section title="Step One">
-             Edit <Text style={styles.highlight}>App.js</Text> to change this
-             screen and then come back to see your edits.
-           </Section>
-           <Section title="See Your Changes">
-             <ReloadInstructions />
-           </Section>
-           <Section title="Debug">
-             <DebugInstructions />
-           </Section>
-           <Section title="Learn More">
-             Read the docs to discover what to do next:
-           </Section>
-           <LearnMoreLinks />
-         </View>
-       </ScrollView>
-     </SafeAreaView>
-   );
- };
+  const lookDown = () =>
+    riveRef.current?.setInputState('State Machine 1', 'Check', true);
+  riveRef.current?.setInputState(
+    'State Machine 1',
+    'Look',
+    username.length * 2,
+  );
 
- const styles = StyleSheet.create({
-   sectionContainer: {
-     marginTop: 32,
-     paddingHorizontal: 24,
-   },
-   sectionTitle: {
-     fontSize: 24,
-     fontWeight: '600',
-   },
-   sectionDescription: {
-     marginTop: 8,
-     fontSize: 18,
-     fontWeight: '400',
-   },
-   highlight: {
-     fontWeight: '700',
-   },
- });
+  const lookUp = () =>
+    riveRef.current?.setInputState('State Machine 1', 'Check', false);
 
- export default App;
+  const authenticateUser = async () => {
+    const response: Response = await fetch(
+      'https://60d4631361160900173cb0d9.mockapi.io/users',
+    );
+    const users: Users[] = await response.json();
+    const validUser = users.find(
+      user => username === user.username && password === user.password,
+    );
+    console.log(validUser);
+    if (validUser) {
+      success();
+    } else {
+      wrongPassword();
+    }
+  };
+  return (
+    <SafeAreaView style={styles.safeArea}>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Rive
+          resourceName={resourceName}
+          autoplay
+          stateMachineName={'State Machine 1'}
+          alignment={Alignment.TopCenter}
+          ref={riveRef}
+          style={styles.rive}
+        />
+        <TextInput
+          autoCorrect
+          placeholder="User Name"
+          onChangeText={setUsername}
+          onFocus={lookDown}
+          onBlur={lookUp}
+          value={username}
+          style={styles.input}
+        />
+        <TextInput
+          autoCorrect
+          placeholder="Password"
+          onChangeText={setPassword}
+          onFocus={handsUp}
+          onBlur={handsDown}
+          value={password}
+          autoCompleteType="password"
+          style={styles.input}
+        />
+        <TouchableOpacity style={styles.button} onPress={authenticateUser}>
+          <Text>Press Here</Text>
+        </TouchableOpacity>
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',
+    width: '100%',
+  },
+  rive: {
+    width: 250,
+    height: 250,
+    flexGrow: 0,
+  },
+  input: {
+    backgroundColor: '#fff',
+    width: 250,
+    marginTop: 20,
+    paddingVertical: 10,
+    paddingHorizontal: 5,
+    borderRadius: 6,
+    borderWidth: 1,
+  },
+  safeArea: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  button: {
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
+    padding: 10,
+    marginTop: 20,
+    borderRadius: 6,
+  },
+});
+export default App;
